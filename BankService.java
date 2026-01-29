@@ -5,7 +5,7 @@ public class BankService {
         private double balance;
 
         public BankAccount(double initialBalance) {
-            if (initialBalance < 0) {
+            if (initialBalance < 100) {
                 throw new IllegalArgumentException("Initial balance cannot be negative");
             }
             this.balance = initialBalance;
